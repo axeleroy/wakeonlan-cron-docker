@@ -1,0 +1,5 @@
+#!/bin/sh
+
+{
+  wol -v -i $BROADCAST_IP $MAC_ADDRESS
+} >> /dev/stdout
