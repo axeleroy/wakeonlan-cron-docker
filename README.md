@@ -17,7 +17,7 @@ docker run \
 
 ### Docker-compose
 ```yml
-version: "3"
+version: "2.1"
 services:
   wake-on-lan:
     image: axeleroy/wakeonlan-cron-docker:latest
@@ -25,13 +25,7 @@ services:
       - TZ='Europe/Paris'
       - CRON='20 4 * * *'
       - MAC_ADDRESS=AA:BB:CC:DD:EE:FF
-    networks:
-      hostnet: {}
-
-networks:
-  hostnet:
-    external: true
-    name: host
+    network_mode: host
 ```
 
 ### Environment variables
