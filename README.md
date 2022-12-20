@@ -30,9 +30,10 @@ services:
 
 ### Environment variables
 
-| Variable       | Meaning                                                                   | Example                         |
-|----------------|---------------------------------------------------------------------------|---------------------------------|
-| `TZ`           | Timezone                                                                  | `TZ=Europe/Paris`               |
-| `CRON`         | Cron schedule expression (tip: use [crontab.guru](https://crontab.guru/)) | `CRON=20 4 * * *`               |
-| `MAC_ADDRESS`  | Mac address of the computer you want to wake up                           | `MAC_ADDRESS=AA:BB:CC:DD:EE:FF` | 
-| `BROADCAST_IP` | IP address of the subnet to broadcast the magic packet to                 | `BROADCAST_IP=192.168.0.255`    |
+| Variable         | Meaning                                                                   | Example                         |
+|------------------|---------------------------------------------------------------------------|---------------------------------|
+| `TZ`             | Timezone                                                                  | `TZ=Europe/Paris`               |
+| `CRON`           | Cron schedule expression (tip: use [crontab.guru](https://crontab.guru/)) | `CRON=20 4 * * *`               |
+| `MAC_ADDRESS`    | Mac address of the computer you want to wake up                           | `MAC_ADDRESS=AA:BB:CC:DD:EE:FF` | 
+| `BROADCAST_IP`   | IP address of the subnet to broadcast the magic packet to                 | `BROADCAST_IP=192.168.0.255`    |
+| `CRON_LOG_LEVEL` | Log level of `crond`. Goes from 0 (most verbose) to 8 (default)           | `CRON_LOG_LEVEL=2`              |
