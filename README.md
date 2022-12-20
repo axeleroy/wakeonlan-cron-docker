@@ -2,6 +2,11 @@
 
 A Docker container to wake up a computer on a schedule.
 
+[![Docker Hub](https://img.shields.io/docker/v/axeleroy/wakeonlan-cron-docker?sort=semver&logo=docker)](https://hub.docker.com/r/axeleroy/wakeonlan-cron-docker/tags)
+[![GitHub last commit](https://img.shields.io/github/last-commit/axeleroy/wakeonlan-cron-docker?logo=github&logoColor=959DA5)](https://github.com/axeleroy/wakeonlan-cron-docker/commits/main)
+[![License](https://img.shields.io/github/license/axeleroy/wakeonlan-cron-docker?logo=github&logoColor=959DA5)](https://github.com/axeleroy/wakeonlan-cron-docker/blob/main/LICENSE)
+[![Docker build](https://github.com/axeleroy/wakeonlan-cron-docker/actions/workflows/publish.yml/badge.svg)](https://github.com/axeleroy/wakeonlan-cron-docker/actions/workflows/publish.yml)
+
 ## Instructions
 
 ### Vanilla Docker
