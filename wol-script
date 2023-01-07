@@ -1,10 +1,8 @@
 #!/bin/sh
 
-{
-  if [ -n "$BROADCAST_IP" ]
-  then
-    wol -v -i $BROADCAST_IP $MAC_ADDRESS
-  else
-    wol -v $MAC_ADDRESS
-  fi
-} >> /dev/stdout
+if [ -n "$BROADCAST_IP" ]
+then
+  wol -v -i $BROADCAST_IP $MAC_ADDRESS
+else
+  wol -v $MAC_ADDRESS
+fi
