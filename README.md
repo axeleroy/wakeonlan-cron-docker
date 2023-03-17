@@ -3,8 +3,10 @@
 A Docker container to wake up a computer on a schedule.
 
 [![Docker Hub](https://img.shields.io/docker/v/axeleroy/wakeonlan-cron-docker?sort=semver&logo=docker)](https://hub.docker.com/r/axeleroy/wakeonlan-cron-docker/tags)
+[![Docker Hub](https://img.shields.io/docker/pulls/axeleroy/wakeonlan-cron-docker?logo=docker)](https://hub.docker.com/r/axeleroy/wakeonlan-cron-docker/tags)
+[![GitHub release](https://img.shields.io/github/v/release/axeleroy/wakeonlan-cron-docker?logo=github&logoColor=959DA5)](https://github.com/axeleroy/wakeonlan-cron-docker/packages)
+
 [![GitHub last commit](https://img.shields.io/github/last-commit/axeleroy/wakeonlan-cron-docker?logo=github&logoColor=959DA5)](https://github.com/axeleroy/wakeonlan-cron-docker/commits/main)
-[![License](https://img.shields.io/github/license/axeleroy/wakeonlan-cron-docker?logo=github&logoColor=959DA5)](https://github.com/axeleroy/wakeonlan-cron-docker/blob/main/LICENSE)
 [![Docker build](https://github.com/axeleroy/wakeonlan-cron-docker/actions/workflows/publish.yml/badge.svg)](https://github.com/axeleroy/wakeonlan-cron-docker/actions/workflows/publish.yml)
 
 ## Instructions
@@ -13,7 +15,7 @@ A Docker container to wake up a computer on a schedule.
 
 ```bash
 docker run \
-  axeleroy/wakeonlan-cron-docker:latest \
+  ghcr.io/axeleroy/wakeonlan-cron-docker:latest \
   -e "TZ=Europe/Paris" \
   -e "CRON=20 4 * * *" \
   -e "MAC_ADDRESS=AA:BB:CC:DD:EE:FF" \
@@ -25,7 +27,7 @@ docker run \
 version: "2.1"
 services:
   wake-on-lan:
-    image: axeleroy/wakeonlan-cron-docker:latest
+    image: ghcr.io/axeleroy/wakeonlan-cron-docker:latest
     environment:
       - TZ=Europe/Paris
       - CRON=20 4 * * *
