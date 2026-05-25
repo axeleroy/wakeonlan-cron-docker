@@ -16,7 +16,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             -   name: Install jq
-                run: apt install jq -y
+                run: sudo apt install jq -y
             -   name: Get tag
                 id: get_tag
                 run: |
