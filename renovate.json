@@ -3,6 +3,7 @@
   "extends": [
     "config:best-practices",
     ":automergeStableNonMajor",
+    ":automergeDigest",
     ":labels(dependencies)"
   ]
 }
