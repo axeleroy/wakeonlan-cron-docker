@@ -1,7 +1,9 @@
 name: Continuous Integration
 
 on:
-  push: {}
+  push:
+      branches-ignore:
+          - main
 
 jobs:
   docker:
